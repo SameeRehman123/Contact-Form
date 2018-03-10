@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Old+Standard+TT');
+
+body, html{
+  position: relative;
+  background-color: rgb(196, 196, 196);
+  font-family: 'Raleway', Arial;
+  margin: 0px;
+  padding: 0px;
+}
+
+input, textarea{
+  border: none;
+  outline: none;
+}
+
+h3{
+  margin: 0;
+  padding: 0;
+}
+
+.backPanel{
+  position: absolute;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #173e43;
+  width: 58%;
+  height: 88vh;
+  left: 50%;
+  transform: translate(-50%);
+  /* margin: auto; */
+  z-index: -1;
+}
+
+.contactInfo{
+  position: absolute;
+  background: rgb(173, 173, 173);
+  box-shadow: 0 4px 1px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+  padding: 25px;
+  /* outline: red solid 1px; */
+  max-width: 244px;
+  min-height: 220px;
+  top: 135px;
+  left: 58%;
+  z-index: 1;
+}
+
+.contactInfo p{
+  display: inline-block;
+  font-family: 'Old Standard TT', Arial;
+  font-weight: 600;
+  padding-left: 25px;
+  height: auto;
+  vertical-align: middle;
+  font-size: 0.95em;
+  margin: 0px;
+}
+
+.contactInfo h4{
+  text-transform: uppercase;
+  margin: 0px;
+  padding-top: 5px;
+  padding-bottom: 32px;
+}
+
+.location, .phone, .emailContact{
+  /* outline: red solid 1px; */
+  margin-bottom: 32px;
+}
+
+.contact{
+  padding: 35px 35px 35px 70px;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* outline: red solid 1px; */
+  width: 59%;
+  top: 70px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.contact h3{
+  font-size: 1.7em;
+  padding-bottom: 35px;
+}
+
+.fullName, .email, .message{
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.fullName input, .email input{
+  /* outline: red solid 1px; */
+  font-size: 17px;
+  margin-bottom: 25px;
+  width: 40%;
+  font-family: 'Raleway', Arial;
+  padding: 5px 5px 1px 1px;
+  border: none;
+  border-bottom: 1px solid #8c8c8c;
+}
+
+.fullName label, .email label{
+  position: absolute;
+  color: rgb(157, 157, 157);
+  left: 0px;
+  top: 0;
+  font-style: italic;
+  font-size: 0.87em;
+  pointer-events: none;
+}
+.message textarea{
+  padding: 17px;
+  font-size: 15px;
+}
+
+.message label{
+  position: absolute;
+  font-size: 0.87em;
+  color: rgb(157, 157, 157);
+  left: 5px;
+  top: 15px;
+  font-style: italic;
+  font-size: 0.85em;
+  pointer-events: none;
+}
+
+input:focus + label,
+.message textarea:focus + label{
+  top: -15px;
+  font-size: 13px;
+  transition: all 0.18s ease-out 0s;
+}
+
+input.has-value + label,
+textarea.has-value + label{
+  top: -15px;
+  font-size: 13px;
+}
+
+.message textarea{
+  /* outline: red solid 1px; */
+  margin-top: 5px;
+  width: 40%;
+  font-family: 'Raleway', Arial;
+  padding: 5px;
+  border: none;
+  border: 1px solid #8c8c8c;
+  max-width: 50%;
+  max-height: 120px;
+}
+
+.submitBtn input{
+  background-color: rgb(255, 176, 0);
+  font-size: 0.95em;
+  font-family: 'Raleway', Arial;
+  text-transform: uppercase;
+  width: 42%;
+  padding: 11px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.iconSet{
+  position: absolute;
+  bottom: 20px;
+  right: 50px;
+}
+
+
+i:nth-child(1){
+  padding-left: 10px;
+}
